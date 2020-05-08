@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Auth from "../hoc/auth";
 // pages for this product
+import UploadProductPage from './views/UploadProductPage/UploadProductPage'
 
 //About Auth
 import LandingPage from "./views/LandingPage/LandingPage.js";
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/" component={Auth(LandingPage, null)} />
             <Route exact path="/login" component={Auth(LoginPage, false)} />
             <Route exact path="/register" component={Auth(RegisterPage, false)} />
+            <Route exact path="/product/upload" component={Auth(UploadProductPage, true)}/>
           </div>
           <Route component={Auth(NotFoundPage, null)} />
         </Switch>
