@@ -1,1 +1,1 @@
-# boilerplate-mern-stack-v2.0
+# E-Commerce-MERN [MongoDB, Express, React, Node.js]
